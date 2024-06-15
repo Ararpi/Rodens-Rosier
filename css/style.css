@@ -18,22 +18,22 @@ a {
   color: inherit;
 }
 ::selection{
-  background: #1f75fe;
+  background: var(--main-color);
   color: #fff;
 }
 
 ::-moz-selection{
-  background: #1f75fe;
+  background: var(--main-color);
   color: #fff;
 }
 
 ::-webkit-selection{
-  background: #1f75fe;
+  background: var(--main-color);
   color: #fff;
 }
 
 ::-webkit-scrollbar{
-  width: 15px;
+  width: 0.9375rem;
 }
 
 ::-webkit-scrollbar-track{
@@ -41,12 +41,12 @@ a {
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: #1f75fe;
+  background-color: var(--main-color);
   background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background-color: #0047ab;
+  background-color: var(--hover-color);
 }
 
 body {
@@ -87,7 +87,7 @@ body {
 }
 
 .rr-logo:hover {
-  color: #0047ab;
+  color: var(--hover-color);
 }
 
 .seccion-iconos-contacto {
@@ -148,7 +148,7 @@ body {
 
 .profesion-rr {
   color: #777;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
   margin: 0 0 0.3125rem 0;
   padding: 0;
@@ -156,7 +156,7 @@ body {
 
 .boton-contacto
 {
-  background-color: #1f75fe;
+  background-color: var(--main-color);
   color: #fff;
   font-size: 0.75rem;
   font-weight: 500;
@@ -168,7 +168,7 @@ body {
 
 .boton-contacto:hover
 {
-  background-color: #0047ab;
+  background-color: var(--hover-color);
 }
 
 .bloque-presentacion {
