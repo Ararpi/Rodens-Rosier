@@ -1,2 +1,0 @@
-# Rodens-Rosier
-Página Personal
