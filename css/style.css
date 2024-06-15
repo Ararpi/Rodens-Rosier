@@ -187,12 +187,6 @@ body {
   text-align: left;
 }
 
-.seccion-dos,
-.seccion-img-nombre-profesion,
-.bloque-presentacion {
-  display: flex;
-}
-
 .seccion-competencias {
   height: auto;
   width: auto;
