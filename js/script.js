@@ -15,7 +15,7 @@ function resizeReset() {
 	w = canvas.width = window.innerWidth;
 	h = canvas.height = window.innerHeight;
 	
-	ctx.fillStyle = "#212121";
+	ctx.fillStyle = "#000";
 	ctx.fillRect(0, 0, w, h);
 }
 
