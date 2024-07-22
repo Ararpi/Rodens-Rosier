@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --main-color: #1f75fe;
+  --hover-color: #0047ab;
+  --background-main-color: #000;
+  --gris-claro: #777;
+  --gris-oscuro: #555;
+  --blanco: #fff;
+  --negro: #000;
+  --crema: #ccc;
+  --font-family: "Inter", sans-serif;
+  --font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection{
+  background: #1f75fe;
+  color: #fff;
+}
+
+::-moz-selection{
+  background: #1f75fe;
+  color: #fff;
+}
+
+::-webkit-selection{
+  background: #1f75fe;
+  color: #fff;
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #1f75fe;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #0047ab;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-main-color);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0 0.9375rem;
+}
+
+/*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• Seccion Barra de Navegación Superior •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+.nav-bar-superior {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0.9375rem 0;
+  z-index: 999;
+}
+
+.seccion-icono-logo-rr {
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.rr-logo {
+  color: #1f75fe;
+  height: 1.875rem;
+  width: 1.875rem;
+  margin: 0;
+  padding: 0;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
+.rr-logo:hover {
+  color: #0047ab;
+}
+
+.seccion-iconos-contacto {
+  height: auto;
+  width: 8.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.iconos-contacto {
+  display: flex;
+  align-items: center;
+  color: #1f75fe;
+  height: 1.875rem;
+  width: 1.875rem;
+  margin: 0 0.46875rem;
+  padding: 0;
+  transition: all .25s;
+}
+
+.iconos-contacto:hover {
+  color: #0047ab;
+}
+
+/*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• Seccion Barra de Navegación Superior •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+.seccion-aliento {
+  background-color: var(--background-main-color);
+  border: 0.09375rem solid var(--main-color);
+  border-radius: 0.9375rem;
+  margin: auto;
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+.seccion-palabras-dinamicas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  margin: 0 0.9375rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+.seccion-palabras-dinamicas
+.seccion-textos-cambiantes
+.textos-cambiantes
+.palabras-dinamicas{
+  background-image: linear-gradient(45deg, #283048, #859398);
+  background-clip: text;
+  color: transparent;
+  font-size: 2.8125rem;
+  font-weight: 700;
+  display: inline-block;
+  display: none;
+}
+
+.seccion-textos-cambiantes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textos-cambiantes {
+  margin: 0;
+  padding: 0;
+}
+
+.seccion-palabras-dinamicas
+.seccion-textos-cambiantes
+.textos-cambiantes
+.text-in{
+ display: block;
+ animation: textIn 0.5s ease;
+}
+
+.seccion-palabras-dinamicas
+.seccion-textos-cambiantes
+.textos-cambiantes
+.palabras-dinamicas
+.text-out{
+ animation: textOut 0.5s ease;
+}
+@keyframes textIn{
+ 0%{
+   transform: translateY(100%);
+ }
+ 100%{
+   transform: translateY(0%);
+ }
+}
+@keyframes textOut{
+ 0%{
+   transform: translateY(0%);
+ }
+ 100%{
+   transform: translateY(-100%);
+
+ }
+}
+
+.bloque-frase-aliento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0.9375rem 0;
+}
+
+.frase-aliento {
+  background-image: linear-gradient(45deg, #283048, #859398);
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  font-size: 1.875rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• Seccion Footer •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+.seccion-footer {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 0.46875rem 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 999;
+  height: auto;
+  width: 100%;
+}
+
+.texto-footer {
+  color: var(--gris-claro);
+  font-size: 0.78125rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+/*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• Responsiveness •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+/* SM */
+@media (max-width: 480px) {}
+
+/* M */
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* L */
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+/* XL */
+@media (min-width: 1025px) and (max-width: 1200px) {}
+
+/* 2XL */
+@media (min-width: 1201px){}
